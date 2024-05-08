@@ -10,7 +10,7 @@ public class MapDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println( "Hello World!" );
+		System.out.println( "OneToOne Mapping" );
         
         Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
         SessionFactory factory = configuration.buildSessionFactory();
