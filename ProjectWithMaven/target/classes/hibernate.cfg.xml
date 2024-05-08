@@ -16,7 +16,7 @@
    
    <property name = "hibernate.connection.password">root</property>
    
-   <property name="hbm2ddl.auto">create</property>
+   <property name="hbm2ddl.auto">update</property>
    
    <property name="show_sql">true</property>
    
@@ -25,6 +25,10 @@
    <mapping class="com.map.Question"/>
    
    <mapping class="com.map.Answer"/>
+   
+   <mapping class="OneToManyMapping.Customer"/>
+   
+   <mapping class="OneToManyMapping.MobileInformation"/>
 
       
   </session-factory>
