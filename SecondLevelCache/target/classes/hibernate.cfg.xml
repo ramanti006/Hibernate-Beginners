@@ -16,15 +16,18 @@
    
    <property name = "hibernate.connection.password">root</property>
    
-   <property name="hbm2ddl.auto">create</property>
+   <property name="hbm2ddl.auto">update</property>
    
    <property name="show_sql">true</property>
    
-   <property name="hibernate.cache.use_second_level_cache">true</property>
+<property name="hibernate.cache.use_second_level_cache">true</property>
+<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+<property name="hibernate.cache.use_query_cache">true</property>
+<property name="hibernate.cache.region_prefix">hibernate.test</property>
    
-   <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+   <mapping class="SecondLevelCache.SecondLevelCache.Employee"/>
    
-   <class-cache class="SecondLevelCache.SecondLevelCache.Employee" usage="read-only"/>
+   
       
   </session-factory>
 </hibernate-configuration>
