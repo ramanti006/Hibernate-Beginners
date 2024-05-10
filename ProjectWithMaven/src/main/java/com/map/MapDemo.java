@@ -43,9 +43,9 @@ public class MapDemo {
         Transaction tx = ss.beginTransaction();
         
         ss.save(q1);
-        ss.save(a1);
+
         ss.save(q2);
-        ss.save(a2);
+
         tx.commit();
         ss.close();
         

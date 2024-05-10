@@ -1,5 +1,6 @@
 package com.map;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
@@ -14,7 +15,7 @@ public class Answer {
 	
 	private String ans;
 	
-	@OneToOne(mappedBy = "answer")
+	@OneToOne(mappedBy = "answer",cascade = CascadeType.ALL)
 	private Question qus;
 
 	
