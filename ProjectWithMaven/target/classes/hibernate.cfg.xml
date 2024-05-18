@@ -30,9 +30,11 @@
    
    <mapping class="OneToManyMapping.MobileInformation"/>
    
-    <mapping class="ManyToManyMapping.Project"/>
+   <mapping class="ManyToManyMapping.Project"/>
     
-     <mapping class="ManyToManyMapping.Employee"/>
+   <mapping class="ManyToManyMapping.Employee"/>
+   
+   <mapping class="com.map.ObjectState.HouseWife"/>
 
       
   </session-factory>
